@@ -3,11 +3,12 @@ import { RiDeleteBinLine } from "react-icons/ri";
 
 export class Note extends Component {
   render() {
+    const { id, text, date } = this.props;
     return (
       <div className='note'>
-        <span>ur gay</span>
+        <span>{text}</span>
         <div className='note-footer'>
-            <small>25/25/2025</small>
+            <small>{date}</small>
             <RiDeleteBinLine className='delete-icon' size='1.3em'/>
         </div>
       </div>

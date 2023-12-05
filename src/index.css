@@ -11,3 +11,69 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --sticky-light: #ffcf7d;
+  --Sticky-dark: #ffffff;
+  --sitcky-active: #272727;
+
+  --icon-light: #000000;
+  --icon-dark: #ffffff;
+  --text: black;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 100px 15px 50px 15px;
+}
+
+.note-list {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.note.new {
+  background-color: var(--sitcky-active);
+}
+
+textarea {
+  border: none;
+  resize: none;
+  background-color: var(--sitcky-active);
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.save {
+  background-color: var(--text) ;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+}
+
+.save:hover {
+  background-color: #3f3f3f;
+  cursor: pointer;
+}
+
+.note {
+  background-color: var(--sticky-light);
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.note-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
