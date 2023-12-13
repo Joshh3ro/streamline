@@ -5,11 +5,18 @@ import Note from './Note'
 
 export class NoteList extends Component {
   render() {
-    const { notes, handleAddNote } = this.props;
+    const { notes, handleAddNote, handleDelete } = this.props;
     return (
       <div className='note-list'>
         {notes.map((note)=>
-          <Note id={note.id} text={note.text} date={note.date} />
+          <Note
+            key={note.id}
+            id={note.id}
+            title={note.title} 
+            text={note.text} 
+            date={note.date}
+            handleDelete={handleDelete}
+            />
         )}
         <AddNote handleAddNote={handleAddNote}/>
       </div>
