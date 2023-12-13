@@ -41,7 +41,6 @@ function App() {
   
     if(savedNotes){
       setNotes(savedNotes);
-      console.log('Loaded notes from local storage:', savedNotes);
     }
   }, [])
 
