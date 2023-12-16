@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { RiSunFill } from "react-icons/ri";
 
 export class Header extends Component {
     render() {
@@ -10,7 +11,10 @@ export class Header extends Component {
                     Notes
                 </h1>
                 <button className='save' onClick={() => handleDarkMode((previousDarkMode) => ! previousDarkMode)}>
-                    Mode
+                <RiSunFill 
+                    className='mode-icon'
+                    size='1.3em'
+                />
                 </button>
             </div>
         )

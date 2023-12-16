@@ -7,7 +7,7 @@ export class Search extends Component {
 
         return (
             <div className='search-bar'>
-                <MdSearch className='search-icon' size='1.3em' />
+                <MdSearch className='search-icon2' size='1.3em' />
                 <input
                     onChange={(event) => handleSearch(event.target.value)}
                     type='text'

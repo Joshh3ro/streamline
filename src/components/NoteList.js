@@ -8,17 +8,17 @@ export class NoteList extends Component {
     const { notes, handleAddNote, handleDelete } = this.props;
     return (
       <div className='note-list'>
-        {notes.map((note)=>
+        {notes.map((note) =>
           <Note
             key={note.id}
             id={note.id}
-            title={note.title} 
-            text={note.text} 
+            title={note.title}
+            text={note.text}
             date={note.date}
             handleDelete={handleDelete}
-            />
+          />
         )}
-        <AddNote handleAddNote={handleAddNote}/>
+        <AddNote handleAddNote={handleAddNote} />
       </div>
     )
   }

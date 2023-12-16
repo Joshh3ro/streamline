@@ -10,27 +10,21 @@ function App() {
   const [note, setNotes] = useState([
     {
       id: nanoid(),
-      title: "Some Title Text Here",
-      text: "This is some random text",
-      date: "25/25/2005",
-    },
-    {
-      id: nanoid(),
-      title: "Some Title Text Here",
-      text: "This is some random text plus more",
+      title: "Note app by joshua S.",
+      text: "To use this app all you have to do is\n\n#1 type in the grey note box\n#2 the box will tell you how many words you have\n#3 The box includes a save field that will save the note on page and browser data",
       date: "25/25/2035",
     },
     {
       id: nanoid(),
-      title: "Some Title Text Here",
-      text: "This is some random text plus less",
+      title: "Example Note",
+      text: "This is an example note feel free to delete it\n#1 How to delete? click the delete icon\n#2 How to turn on dark mode: click the sun icon\n#3 How to save: click the save button",
       date: "25/25/2065",
     },
     {
       id: nanoid(),
-      title: "Some Title Text Here",
-      text: "This is some random text plus something",
-      date: "25/25/2095",
+      title: "Search",
+      text: "These are just words to fill out the page\nthe page will span to as many notes\nas you need without question \n\nso make as many as you need\nand search keywords to find them again",
+      date: "25/25/2065",
     },
   ]);
 
