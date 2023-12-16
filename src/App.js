@@ -24,7 +24,7 @@ function App() {
       id: nanoid(),
       title: "Search",
       text: "These are just words to fill out the page\nthe page will span to as many notes\nas you need without question \n\nso make as many as you need\nand search keywords to find them again",
-      date: "25/25/2065",
+      date: "25/25/2069",
     },
   ]);
 
