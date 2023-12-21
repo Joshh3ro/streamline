@@ -27,6 +27,7 @@ code {
   --Sticky-dark: #ffffff;
   --icon-dark: #ffffff;
   --text-dark: #ffffff;
+  --button-hover: #999999;
 }
 
 
@@ -101,7 +102,7 @@ textarea:focus {
 }
 
 .save:hover {
-  background-color: #3f3f3f;
+  background-color: var(--button-hover);
   cursor: pointer;
 }
 
